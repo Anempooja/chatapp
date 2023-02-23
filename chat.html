@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat box</title>
+</head>
+<link rel="stylesheet" href="chat.css">
+<body>
+<div id="groupnames">
+
+</div>
+
+<button id="createGroup" onclick="showCreateGroupForm(event)">create group</button>
+
+    <form id="form" onsubmit="savechat(event)">
+        <input type="text" id="message" placeholder="type message" required/>
+       <button>submit</button>
+            <ul id="ul"></ul>
+</form>
+<form onsubmit="sendImage(event)" id="fileBox">
+    <input type="file" name="file" id="file" />
+    <button id="send">SEND IMAGE</button>
+  </form>
+<div id="groups" >
+   
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.2.0/axios.min.js"></script>
+</body>
+</html>
+<script src="chat.js"></script>
+<script>
+    // setInterval(() => {
+    // window.location.href="chat.html"
+    // }, 5000);
+</script>
